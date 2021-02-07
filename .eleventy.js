@@ -2,12 +2,6 @@ const htmlmin = require("html-minifier"),
   markdownIt = require("markdown-it");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.setTemplateFormats([
-    "njk",
-    "ico",
-    "png",
-    "xml"
-  ]);
 
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (outputPath.endsWith(".html")) {
