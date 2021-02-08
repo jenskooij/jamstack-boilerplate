@@ -45,7 +45,7 @@ module.exports =
     year: 2018,
     image: "https://www.sanquin.org/static/img/logo/logo-sanquin.svg",
     notes: "Jul 2018 - Nov 2018",
-    description: `Als lead developer voor KNGF gewerkt aan de gehele KNGF.nl website. Met name de bouw van de kennisbank en de API koppeling hiervan met de mobiele app.`,
+    description: `Met een klein team hebben we binnen korte tijd de volledige nieuwe website van Sanquin.nl neergezet. Focus lag op het verhogen van het aantal kwalitatieve aanmeldingen van bloed- en plasmadonoren. Dat hebben we onder andere gedaan door de aanmeldprocedure eenvoudig, toegankelijk en gebruiksvriendelijk te maken. `,
     keywords: ["Bloomreach Experience Manager (brXM)", "Java", "Freemarker", "Groovy", "yaml", "html", "css", "javascript", "Bitbucket", "Git", "Jira", "Confluence", "IntelliJ", "jRebel", "Bloomreach Cloud"]
   },
   {

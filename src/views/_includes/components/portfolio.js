@@ -72,12 +72,17 @@ class Portfolio {
       <script>
         window.addEventListener("DOMContentLoaded", () => {
           const items = document.querySelectorAll('.portfolio-item'),
+          portfolioMoreButtons = document.querySelectorAll('.portfolio-more-button'),
           portfolioModal = document.getElementById('portfolioModal'),
           portfolioModalContent = portfolioModal.querySelector('.modal-content');
           
+          const togglePortfolio = (e) => {
+            e.currentTarget.parentNode.querySelector('.portfolio-more').classList.remove('is-hidden');
+            e.currentTarget.parentNode.removeChild(e.currentTarget);
+          }
+          
           const clickPortfolioItem = (e) => {
             portfolioModal.classList.add('is-active');
-            console.log(e.currentTarget);
             portfolioModalContent.innerHTML = '';
             portfolioModalContent.appendChild(e.currentTarget.cloneNode(true));
             portfolioModalContent.querySelectorAll('.is-hidden').forEach(el => el.classList.remove('is-hidden'));
@@ -89,10 +94,10 @@ class Portfolio {
           };
           
           document.body.appendChild(portfolioModal);
+          portfolioMoreButtons.forEach(el => el.addEventListener('click', togglePortfolio))
           portfolioModal.querySelector('.modal-close').addEventListener('click', closePortfolioModal);
           portfolioModal.querySelector('.modal-background').addEventListener('click', closePortfolioModal);
           window.addEventListener('keydown', e => {e.key.toLowerCase() === 'escape' ? closePortfolioModal() : null;})
-            
             items.forEach(el => {
               el.addEventListener('click', clickPortfolioItem, false);
             });
@@ -100,16 +105,18 @@ class Portfolio {
       </script>
       <div class="modal" id="portfolioModal">
         <div class="modal-background"></div>
-        <div class="modal-content"></div>
+        <div class="modal-content p-6"></div>
         <button class="modal-close is-large" aria-label="close"></button>
       </div>
       `;
     }
     Portfolio.prototype.jsLogicPrinted = true;
 
+    let portfolio = Object.entries(this.portfolioData).reverse();
+
     return `
     <div class="portfolio-component">
-      ${Object.entries(this.portfolioData).reverse().map(([year, items]) => `
+      ${portfolio.map(([year, items], index) => `
         <p class="subtitle">${year}</p>
         <div class="columns is-mobile">
            ${items.map(item => `
@@ -133,7 +140,9 @@ class Portfolio {
             </div>
            `.trim()).join('')}
         </div>
-        
+        ${index === 1 ? `<span class="button portfolio-more-button is-primary">Eerdere werkervaring</span>` : ""}        
+        ${index === 1 ? '<div class="is-hidden portfolio-more">' : ""}
+        ${index === portfolio.length - 1 ? '</div>' : ""}
       `.trim()).join('')}
     </div>
     ${jsLogic || ""}
