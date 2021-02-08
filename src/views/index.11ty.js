@@ -17,16 +17,14 @@ class Index {
            Jens<br />
            Kooij 
       </h1>
-      <a class="" href="/">Home</a>  
+      <a class="" href="/#werkervaring">Werkervaring</a>  
     </nav>
   </aside>
   <main class="column container p-6">
-    <section>
+    <section class="portfolio" id="werkervaring">
       <h2 class="subtitle is-size-2 mb-6">
         Werkervaring
       </h2>
-    </section>
-    <section class="portfolio">
       ${porfolioComponent.render()}
     </section>
   </main>
