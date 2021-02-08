@@ -25,4 +25,8 @@ $content-heading-weight: 400;
 
 @import "../../node_modules/bulma/bulma";
 
+a {
+  text-decoration:underline;
+}
+
 @import "components/portfolio";

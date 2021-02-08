@@ -24,6 +24,7 @@ class Index {
   </section>
 </main>
     `.trim();
+
   }
 }
 

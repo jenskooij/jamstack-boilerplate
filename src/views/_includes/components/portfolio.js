@@ -1,6 +1,15 @@
+const Image = require("@11ty/eleventy-img");
+
 class Portfolio {
 
   portfolioData;
+
+  imageOptions = {
+    widths: [300],
+    formats: ["webp"],
+    outputDir: "./dist/site/img/portfolio/",
+    urlPath: "/img/portfolio/"
+  }
 
   constructor () {
     this.data();
@@ -20,7 +29,32 @@ class Portfolio {
       if (!this.portfolioData[item.year]) {
         this.portfolioData[item.year] = [];
       }
-      this.portfolioData[item.year].push(item);
+      if (item.image) {
+        let source = item.image;
+
+        let stats = Image(source, this.imageOptions).then(result => {
+          console.info("Got Image for ", item.title);
+          item.imageHtml = Image.generateHTML(result, {
+            alt: item.title,
+            loading: "lazy",
+            decoding: "async",
+          });
+          this.portfolioData[item.year].push(item);
+        }).catch(err => {
+          this.portfolioData[item.year].push(item);
+          console.error(`Unable to fetch ${item.image} ${err}`);
+        });
+
+        /*let metadata = Image.statsSync(source, this.imageOptions);
+        item.imageHtml = Image.generateHTML(metadata, {
+          alt: item.title,
+          loading: "lazy",
+          decoding: "async",
+        });*/
+      } else {
+        console.info(`No image for ${item.title}`);
+        this.portfolioData[item.year].push(item);
+      }
 
     });
     Portfolio.prototype.dataInitialized = true;
@@ -32,6 +66,7 @@ class Portfolio {
    */
   render () {
     let jsLogic;
+    console.info("Rendering portfolio");
     if (!Portfolio.prototype.jsLogicPrinted) {
       jsLogic = `
       <script>
@@ -46,6 +81,7 @@ class Portfolio {
             portfolioModalContent.innerHTML = '';
             portfolioModalContent.appendChild(e.currentTarget.cloneNode(true));
             portfolioModalContent.querySelectorAll('.is-hidden').forEach(el => el.classList.remove('is-hidden'));
+            portfolioModalContent.querySelectorAll('.is-hidden-mobile').forEach(el => el.classList.remove('is-hidden-mobile'));
           };
           
           const closePortfolioModal = () => {
@@ -75,17 +111,17 @@ class Portfolio {
     <div class="portfolio-component">
       ${Object.entries(this.portfolioData).reverse().map(([year, items]) => `
         <p class="subtitle">${year}</p>
-        <div class="columns">
+        <div class="columns is-mobile">
            ${items.map(item => `
            <div class="column is-one-third">
               <div class="box portfolio-item">
                 <article class="media">
                   <figure class="media-left">
-                    <p class="image is-128x128">
-                      <img src="https://bulma.io/images/placeholders/128x128.png">
+                    <p class="image is-64x64">
+                      ${item.imageHtml || ""}
                     </p>
                   </figure>
-                  <div class="media-content">
+                  <div class="media-content is-hidden-mobile">
                     <div class="content">
                       <h3>${item.title}</h3>
                       <p class="is-hidden is-size-5">${item.description}</p>

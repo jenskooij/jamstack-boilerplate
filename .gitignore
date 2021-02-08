@@ -17,4 +17,5 @@ dist
 
 .DS_Store
 .env
+.cache
 
