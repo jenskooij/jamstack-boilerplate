@@ -1,5 +1,4 @@
-module.exports =
-[
+const portfolio = [
   {
     title: "Developers.nl",
     image: "https://pbs.twimg.com/profile_images/1050783091374125056/RScU3d1-.jpg",
@@ -169,3 +168,14 @@ module.exports =
     keywords: ["html", "css"]
   }
 ]
+
+module.exports = () => {
+  let reformedPortfolio = {};
+  portfolio.forEach(item => {
+    if (!reformedPortfolio[item.year]) {
+      reformedPortfolio[item.year] = [];
+    }
+    reformedPortfolio[item.year].push(item);
+  });
+  return Object.entries(reformedPortfolio).reverse();
+}

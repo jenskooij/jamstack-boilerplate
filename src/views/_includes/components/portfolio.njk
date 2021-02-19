@@ -1,0 +1,79 @@
+<div class="portfolio-component">
+  {% for year, items in portfolio %}
+    <p class="subtitle">{{ year }}</p>
+    <div class="columns is-mobile">
+      {% for item in items %}
+        <div class="column is-one-third">
+          <div class="box portfolio-item">
+            <article class="media">
+              <figure class="media-left">
+                <p class="image is-64x64">
+                  {% image item.image, item.title %}
+                </p>
+              </figure>
+              <div class="media-content is-hidden-mobile">
+                <div class="content">
+                  <h3>{{ item.title }}</h3>
+                  <p class="is-hidden is-size-5">{{ item.description }}</p>
+                  <small class="small is-hidden">{{ item.keywords | join(', ') }}</small>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    {% if loop.index == 2 %}
+      <span class="button portfolio-more-button is-primary is-rounded">Bekijk werkervaring 2009-{{ year - 1 }}</span>
+      <div class="is-hidden portfolio-more">
+    {% endif %}
+    {% if loop.last %}
+      </div>
+    {% endif %}
+  {% endfor %}
+  <div class="mt-3">
+    <a class="button is-rounded" href="https://docs.google.com/document/d/1c0r_XFytlBWFwhf1_UKg15XKr7shBHoosqhSUyat5bo/edit?usp=sharing" target="_blank", rel="noopener">📄 Uitgebreid CV</a>
+    <a class="button is-rounded" href="https://docs.google.com/document/d/1-OLkHwy6GII-rGAKeR0e2NTN2awO-NaCbfVRjnfP8MI/edit?usp=sharing" target="_blank" rel="noopener">📄 Resumé in English</a>
+  </div>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const items = document.querySelectorAll('.portfolio-item'),
+        portfolioMoreButtons = document.querySelectorAll('.portfolio-more-button'),
+        portfolioModal = document.getElementById('portfolioModal'),
+        portfolioModalContent = portfolioModal.querySelector('.modal-content');
+
+      const togglePortfolio = (e) => {
+        e.currentTarget.parentNode.querySelector('.portfolio-more').classList.remove('is-hidden');
+        e.currentTarget.parentNode.removeChild(e.currentTarget);
+      }
+
+      const clickPortfolioItem = (e) => {
+        portfolioModal.classList.add('is-active');
+        portfolioModalContent.innerHTML = '';
+        portfolioModalContent.appendChild(e.currentTarget.cloneNode(true));
+        portfolioModalContent.querySelectorAll('.is-hidden').forEach(el => el.classList.remove('is-hidden'));
+        portfolioModalContent.querySelectorAll('.is-hidden-mobile').forEach(el => el.classList.remove('is-hidden-mobile'));
+      };
+
+      const closePortfolioModal = () => {
+        portfolioModal.classList.remove('is-active');
+      };
+
+      document.body.appendChild(portfolioModal);
+      portfolioMoreButtons.forEach(el => el.addEventListener('click', togglePortfolio))
+      portfolioModal.querySelector('.modal-close').addEventListener('click', closePortfolioModal);
+      portfolioModal.querySelector('.modal-background').addEventListener('click', closePortfolioModal);
+      window.addEventListener('keydown', e => {
+        e.key.toLowerCase() === 'escape' ? closePortfolioModal() : null;
+      })
+      items.forEach(el => {
+        el.addEventListener('click', clickPortfolioItem, false);
+      });
+    });
+  </script>
+  <div class="modal" id="portfolioModal">
+    <div class="modal-background"></div>
+    <div class="modal-content p-6"></div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+</div>
