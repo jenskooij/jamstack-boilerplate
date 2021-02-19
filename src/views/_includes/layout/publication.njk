@@ -1,0 +1,22 @@
+---
+layout: layout/base
+---
+<div class="content">
+  <h1>{{ title }}</h1>
+  <p class="is-bold">
+    {% markdown %}{{ description }}{% endmarkdown %}
+  </p>
+  {{ content | safe }}
+</div>
+<h3 class="subtitle">Meer publicaties</h3>
+<nav>
+  <ul>
+    {%- for post in collections.post -%}
+      {% if page.url != post.url %}
+        <li>
+          <a href="{{ post.url }}">{{ post.data.title }}</a>
+        </li>
+      {% endif %}
+    {%- endfor -%}
+  </ul>
+</nav>

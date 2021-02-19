@@ -32,6 +32,20 @@
     {% endif %}
   </head>
   <body>
-    {{ content | safe }}
+    <div class="columns">
+      <aside class="column is-one-fifth">
+        <nav class="has-text-centered p-6 is-sticky">
+          <h1 class="title has-text-primary" style="font-size:3vw;">
+            Jens
+            <br/>
+            Kooij
+          </h1>
+          <a class="" href="/#werkervaring">Werkervaring</a>
+        </nav>
+      </aside>
+      <main class="column container p-6">
+        {{ content | safe }}
+      </main>
+    </div>
   </body>
 </html>
