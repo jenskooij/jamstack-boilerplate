@@ -140,10 +140,14 @@ class Portfolio {
             </div>
            `.trim()).join('')}
         </div>
-        ${index === 1 ? `<span class="button portfolio-more-button is-primary">Eerdere werkervaring</span>` : ""}        
+        ${index === 1 ? `<span class="button portfolio-more-button is-primary is-rounded">Bekijk werkervaring 2009-${year-1}</span>` : ""}        
         ${index === 1 ? '<div class="is-hidden portfolio-more">' : ""}
         ${index === portfolio.length - 1 ? '</div>' : ""}
       `.trim()).join('')}
+    </div>
+    <div class="mt-3">
+      <a class="button is-rounded" href="https://docs.google.com/document/d/1c0r_XFytlBWFwhf1_UKg15XKr7shBHoosqhSUyat5bo/edit?usp=sharing" target="_blank", rel="noopener">📄 Uitgebreid CV</a>
+      <a class="button is-rounded" href="https://docs.google.com/document/d/1-OLkHwy6GII-rGAKeR0e2NTN2awO-NaCbfVRjnfP8MI/edit?usp=sharing" target="_blank" rel="noopener">📄 Resumé in English</a>
     </div>
     ${jsLogic || ""}
     `;
