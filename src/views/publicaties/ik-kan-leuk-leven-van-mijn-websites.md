@@ -1,6 +1,6 @@
 ---
 title: "'Ik kan leuk leven van mijn websites'"
-description: Dit artikel is verschenen in het gratis nieuwsblad [Metro](https://www.metronieuws.nl/nieuws/2011/09/ik-kan-leuk-leven-van-mijn-websites) op 12 september 2011 en is geschreven door Nikki van Duuren. 
+description: Dit artikel is verschenen in het gratis nieuwsblad [Metro](https://issuu.com/metro_holland/docs/20110912_nl_rotterdam/24) op 12 september 2011 en is geschreven door Nikki van Duuren. 
 tags: post
 image: http://images.ctfassets.net/s0m3943n5459/3piKW11yoUIAEysIUM8eYU/2a2e2445011b141c0b3d9f4c16801b23/metronieuws.tcdn.nl_2Ffield_2Fimage_2Fdc1e6ad64c09dfe60547077e0e2eff92-1413410270.jpg
 date: 2011-09-12

@@ -1,6 +1,7 @@
 .portfolio-component {
+
   .box {
-    cursor:pointer;
+    cursor: pointer;
 
     &:hover,
     &:focus {
@@ -9,6 +10,35 @@
 
     &:active {
       box-shadow: $box-link-active-shadow
+    }
+  }
+}
+
+.portfolio-item {
+  .image {
+    line-height: 64px;
+
+    img {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+
+}
+
+.portfolio {
+  .portfolio-item {
+    @media screen and (max-width: $tablet - 1px) {
+      .media-left {
+        flex-grow: 1;
+        margin: 0;
+        text-align: center;
+
+        .image {
+          display: inline-block;
+        }
+      }
     }
   }
 }
