@@ -20,7 +20,7 @@
 
     <meta name="og:title" content="{{ pageTitle }}"/>
     <meta name="og:description" content="{{ pageDescription }}"/>
-    <meta property="og:image" content="{{ meta.socialImage }}"/>
+    <meta property="og:image" content="{{ image if image else meta.socialImage }}"/>
     <meta name="twitter:image" content="{{ meta.socialImage }}"/>
 
     {% include "favicons.njk" %}

@@ -2,6 +2,8 @@
 title: "Interview: TunePitch"
 description: Interview met Bart Proost over TunePitch op 3 juni 2013, gepubliceerd op de [site van Popunie](https://popunie.nl/interview-tunepitch/). 
 tags: post
+publicationDate: 2013-06-03
+image: http://images.ctfassets.net/s0m3943n5459/5bglMAzUpimcIsswqC4cWa/3ce4bf5ed341ac32f2ba14b8d6ff8206/TunePitch-persbeeld-1-Fotograaf-Rick-Wevers.jpg
 ---
 TunePitch is een tool voor muziekliefhebbers om de populariteit van de muziek van morgen te voorspellen, door te investeren in potentiële hits. TunePitch is gestart in oktober 2012, de eerste regel code werd geschreven in januari en de website is 21 maart 2013 officieel gelanceerd. De Popunie sprak met de enthousiaste Bart Proost.
 ## Vertel, wie is Bart Proost?

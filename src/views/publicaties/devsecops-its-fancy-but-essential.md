@@ -1,7 +1,9 @@
 ---
 title: DevSecOps - It's fancy, but essential
-description: Article explaining the concept of DevSecOps and how it can influence your way of developing. I wrote this article after visiting jSpring 2018. It was first published on my [LinkedIn page](https://www.linkedin.com/pulse/devsecops-its-fancy-essential-jens-kooij/ "Original article on LinkedIn").
+description: Article explaining the concept of DevSecOps and how it can influence your way of developing. I wrote this article after visiting jSpring 2018. It was first published on my [LinkedIn page](https://www.linkedin.com/pulse/devsecops-its-fancy-essential-jens-kooij/).
 tags: post
+image: http://images.ctfassets.net/s0m3943n5459/1y4XGlmD5mgWQiWKCk6C0y/5bde87f324dd0e41348890248aa35ec8/0
+publicationDate: 2019-02-09
 ---
 ## What is DevSecOps?
 DevSecOps is a fancy new term for when you're talking about security in DevOps. When working in a DevOps setting, deliverables are mostly feature critical, with barely any thought on security. Just to give an illustration on what kind of impact this can have on your projects, let's have a look at the amount of code you actually use in a project, when you're developing with an aim for features.

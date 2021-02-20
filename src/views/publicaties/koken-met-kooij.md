@@ -2,6 +2,8 @@
 title: Koken met Kooij
 description: Artikel [gepubliceerd](https://devlaardinger.nl/Bedrijfsnieuws/Artikel/koken-met-kooij) op 7 maar 2013 op devlaardinger.nl over de lancering van mijn project Fijne Kookspullen.nl.
 tags: post
+image: http://images.ctfassets.net/s0m3943n5459/1h94kgfC0uWeKUKiwOowQK/730d61edf4f6864bd9fa39ce83c76624/maxresdefault.jpg
+publicationDate: 2013-03-07
 ---
 De wereld staat niet stil. De wereld draait zelfs door. En Jens Kooij is ze voor. Met door hem zelf gepatenteerde keukenspullen. Online te koop en altijd door hem in de culinaire praktijk getest en in orde bevonden. In zijn 10-jaar lange carrière - van keukenhulp tot kok - mag hij zich gepokt en gemazeld noemen. En waar hij praktische vraagtekens bij de kwaliteit van kookspullen zet, zie je ze ook niet terug in zijn 'schap'. Dat wil niet zeggen dat het dan niet bestaat, maar ... niet voor Jens.
 

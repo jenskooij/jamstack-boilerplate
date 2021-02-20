@@ -2,6 +2,8 @@
 title: Geluk als KPI
 tags: post
 description: Op 14 november 2019 heb ik voor het TEDx event georganiseerd door de ANWB gesproken over hoe je van geluk een KPI kunt maken. Je kunt de talk hier terugkijken of het hele verhaal zelf lezen.
+publicationDate: 2020-02-04
+image: https://images.ctfassets.net/s0m3943n5459/3YLXHCtUIhCa1ptoChLbUC/add33a75e56c7eb7bbe58b13fb648588/0
 ---
 <a href="https://www.youtube.com/watch?v=MnEXVxjsrBU" target="_blank" class="embedly-card" data-card-width="100%" data-card-controls="0">Bekijk de video: https://www.youtube.com/watch?v=MnEXVxjsrBU</a>
 

@@ -1,7 +1,9 @@
 ---
 title: Scout de nieuwe nummer één hit
-description: Artikel gepubliceerd op 7 juni 2013 op [Bright](https://www.bright.nl/nieuws/artikel/4023606/scout-de-nieuwe-nummer-een-hit). Geschreven door [Bram van Dijk](http://ikbenbram.nl/ "Website Bram van Dijk").
+description: Artikel gepubliceerd op 7 juni 2013 op [Bright](https://www.bright.nl/nieuws/artikel/4023606/scout-de-nieuwe-nummer-een-hit). Geschreven door [Bram van Dijk](http://ikbenbram.nl/).
 tags: post
+image: http://images.ctfassets.net/s0m3943n5459/7MlEqGjwdOBkskcbHqQGHi/1066d56b1282d76fa5bd99867fec1ee7/130607-tunepitch-gr.jpg
+publicationDate: 2013-06-07
 ---
 Schat bij TunePitch in welk nummer een hit gaat worden en wordt een invloedrijke muziekkenner.
 
