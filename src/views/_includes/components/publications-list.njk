@@ -1,0 +1,9 @@
+<nav class="content">
+  <ul class="publications-list">
+    {% for item in collections.post %}
+      <li>
+        <a href="{{ item.url }}">{{ item.data.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

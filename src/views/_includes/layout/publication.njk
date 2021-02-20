@@ -9,14 +9,4 @@ layout: layout/base
   {{ content | safe }}
 </div>
 <h3 class="subtitle">Meer publicaties</h3>
-<nav>
-  <ul>
-    {%- for post in collections.post -%}
-      {% if page.url != post.url %}
-        <li>
-          <a href="{{ post.url }}">{{ post.data.title }}</a>
-        </li>
-      {% endif %}
-    {%- endfor -%}
-  </ul>
-</nav>
+{% include "components/publications-list.njk" %}
