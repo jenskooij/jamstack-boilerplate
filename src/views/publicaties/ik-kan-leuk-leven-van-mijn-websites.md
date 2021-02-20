@@ -3,7 +3,7 @@ title: "'Ik kan leuk leven van mijn websites'"
 description: Dit artikel is verschenen in het gratis nieuwsblad [Metro](https://www.metronieuws.nl/nieuws/2011/09/ik-kan-leuk-leven-van-mijn-websites) op 12 september 2011 en is geschreven door Nikki van Duuren. 
 tags: post
 image: http://images.ctfassets.net/s0m3943n5459/3piKW11yoUIAEysIUM8eYU/2a2e2445011b141c0b3d9f4c16801b23/metronieuws.tcdn.nl_2Ffield_2Fimage_2Fdc1e6ad64c09dfe60547077e0e2eff92-1413410270.jpg
-publicationDate: 2011-09-12
+date: 2011-09-12
 ---
 Elf jaar oud was hij, toen hij zijn eerste website maakte. "Ik zat in groep acht en had samen met een vriend een autowasbedrijf opgericht. Daar hoorde een website bij, vonden we." Jens Kooij, nu 22 jaar, was al een tijd bezig met 'prutsen op internet'. Het combineren van eigen bedrijf en websites maken wilde hij toen al.
 

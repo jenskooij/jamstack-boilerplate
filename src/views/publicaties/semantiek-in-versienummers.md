@@ -3,7 +3,7 @@ title: Semantiek in versienummers
 tags: post
 description: Artikel over de semantiek in versienummers, als het gaat over softwareontwikkeling. Op 10 april 2019 gepubliceerd door [Computable](https://www.computable.nl/artikel/blogs/development/6615926/5260614/semantiek-in-versienummers.html).
 image: http://images.ctfassets.net/s0m3943n5459/14XwB7l8z0cdxxsSLS39OI/e23f598c6ce07d529c3eac2aa4167a50/6615925.jpg
-publicationDate: 2019-05-03
+date: 2019-05-03
 ---
 __Wie met code werkt, kent het fenomeen: wanneer is een wijziging groot genoeg om het ophogen van een versienummer te rechtvaardigen. Is dit een minor change? Of toch meer een bugfix? Er zijn natuurlijk handvatten beschikbaar. In deze blog bespreken we semantiek in versienummering en presenteer ik mijn eigen variant: iterative versioning.
 Allereerst een kleine toelichting van welke versienummeringen er bestaan en in welke situatie ze bruikbaar zijn.__

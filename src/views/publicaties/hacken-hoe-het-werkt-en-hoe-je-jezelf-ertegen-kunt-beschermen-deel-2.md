@@ -3,7 +3,7 @@ title: "Hacken: hoe het werkt en hoe je jezelf ertegen kunt beschermen deel 2"
 description: Tweede deel in een serie over hacken dat ik schreef voor het blog van Incentro. Dit artikel werd op [de site van Incentro](https://www.incentro.com/nl/blog/hacken-hoe-het-werkt-en-hoe-je-jezelf-ertegen-kunt-beschermen-deel-2/) gepubliceerd.
 tags: post
 image: http://images.ctfassets.net/s0m3943n5459/2KJtEd60HS0Aiq4WGmkwWo/c1af8abf50dfaac5f68900d4abc02955/man-coffee-cup-pen-1200x500.jpg
-publicationDate: 2017-01-11
+date: 2017-01-11
 ---
 Als je dit leest is de kans groot dat je dat doet via een apparaat dat verbonden is met het internet via wifi of een andere draadloze verbinding zoals bijvoorbeeld het 4g netwerk van je telefoon. Zoals in het vorige artikel in de serie Hacken: hoe het werkt en hoe je jezelf ertegen kunt beschermen is aangekondigd, zal het dit keer gaan over wifi.
 

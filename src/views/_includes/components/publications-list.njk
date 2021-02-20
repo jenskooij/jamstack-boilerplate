@@ -1,6 +1,6 @@
 <nav class="content">
   <ul class="publications-list">
-    {% for item in collections.post %}
+    {% for item in collections.post | reverse%}
       <li>
         <a href="{{ item.url }}">{{ item.data.title }}</a>
       </li>

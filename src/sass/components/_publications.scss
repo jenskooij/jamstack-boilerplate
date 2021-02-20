@@ -2,4 +2,10 @@
   columns: 3;
   -webkit-columns: 3;
   -moz-columns: 3;
+
+  @media screen and (max-width: $tablet - 1px) {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  }
 }

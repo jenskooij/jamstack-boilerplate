@@ -3,7 +3,7 @@ title: "Hacken: hoe het werkt en hoe je jezelf ertegen kunt beschermen"
 description: Tijdens mijn werk bij Incentro heb ik een korte serie geschreven over hacken en hoe het werkt. Het eerste deel was [gepubliceerd op de site](https://www.incentro.com/nl/blog/hacken-hoe-het-werkt-en-hoe-je-jezelf-ertegen-kunt-beschermen/) van Incentro op 11 janurai 2017.
 tags: post
 image: http://images.ctfassets.net/s0m3943n5459/5zfyI7qH9C2iQyaM6SEC0E/935a17ec51ad1ab925b085254b107657/apple-iphone-smartphone-desk-large-1200x500.jpg
-publicationDate: 2017-01-11
+date: 2017-01-11
 ---
 Vorige week was het weer raak: een massale lek van gebruikersinformatie van [Spotify](http://techcrunch.com/2016/04/25/hundreds-of-spotify-credentials-appear-online-users-report-accounts-hacked-emails-changed/ "Spotify hack op Techcrunch"). Gebruikersnamen, wachtwoorden, e-mailadressen en meer lagen voor het oprapen. Met enige regelmaat zie je [berichten](http://www.nytimes.com/2014/08/06/technology/russian-gang-said-to-amass-more-than-a-billion-stolen-internet-credentials.html?_r=0 "Artikel van de New York Times") in het [nieuws](http://www.nu.nl/internet/2521919/hack-playstation-network-kost-sony-120-miljoen-euro.html "Artikel over Playstation hack op NU.nl") en op de [social media](https://www.facebook.com/wired/posts/10153663838918721 "Bericht van Wired op Facebook") over grootschalige data-leks. Hoog tijd dus om eens een aantal van de verschillende technieken van het hacken onder de loep te nemen. In de komende weken zullen er verschillende onderwerpen aan bod komen in de serie Hacken: hoe het werkt en hoe je jezelf ertegen kunt beschermen.
 

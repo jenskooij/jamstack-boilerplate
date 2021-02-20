@@ -26,7 +26,21 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
+.nowrap {
+  white-space: nowrap;
+}
+
 @import "../../node_modules/bulma/bulma";
+
+.name {
+  font-size: calc(3vw);
+
+  @media screen and (max-width: $tablet - 1px) {
+    font-size: 3rem;
+  }
+}
 
 @import "helpers/sticky";
 

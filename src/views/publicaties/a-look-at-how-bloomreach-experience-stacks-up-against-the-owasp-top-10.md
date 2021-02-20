@@ -3,7 +3,7 @@ title: A look at how BloomReach Experience stacks up against the OWASP top 10
 description: An answer to the top 10 security risks, as presented by the OWASP (Open Web Application Security Project) committee. The most recent top-10 dates from 2017 and can be found [here](https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf)
 tags: post
 image: http://images.ctfassets.net/s0m3943n5459/2niLvNw3fSAMGGME8cowQy/eb4b27b55d39cc1ad9c588032cb4a984/bloomreach-owasp.png
-publicationDate: 2018-06-20
+date: 2018-06-20
 ---
 Having a personal affinity with security is the best motivator of staying up to date with the latest developments on the field of security tools and trends. Incentro enables it's people to attend conferences and seminars to their heart's content and encourages them to write blogs about their passion. For even more in-depth knowledge about security, we won't hesitate to join forces with our partners, like we did with [Onegini](https://www.emerce.nl/wire/samenwerking-incentro-onegini-intelligent-veilig-klantplatform "Incentro and Onegini on Emerce").
 

@@ -3,7 +3,7 @@ title: "TunePitch opent deuren: streaming, maar dan anders"
 description: Artikel van de Popunie over de lancering van TunePitch, gepubliceerd op [de site van de Popunie](https://popunie.nl/tunepitch-opent-deuren-streaming-maar-dan-anders/) op 2 mei 2013. 
 tags: post
 image: http://images.ctfassets.net/s0m3943n5459/3DIFYXTGNqQcuGU8yIUEsU/8edf70c7c9f2f5f729ec4bcc54ada1c4/tunepitch.jpg
-publicationDate: 2013-05-02
+date: 2013-05-02
 ---
 __TunePitch maakt gebruik van de nieuwste technologieën om de beste, nieuwe muziek te onthullen. Het heeft de functionaliteit van een muziekstreamdienst, de viraliteit van social media en de laagdrempeligheid van een hostingdienst zoals Bandcamp en SoundCloud.__
 
