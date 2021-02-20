@@ -5,7 +5,9 @@ layout: layout/base
   <h1>{{ title }}</h1>
   <div class="columns">
     <div class="column is-half content">
-      <em><strong>Publicatiedatum: </strong>{{ date.getDate() }}-{{ date.getMonth() + 1 }}-{{ date.getFullYear() }}</em>
+      {% if date %}
+        <em><strong>Publicatiedatum: </strong>{{ date.getDate() }}-{{ date.getMonth() + 1 }}-{{ date.getFullYear() }}</em>
+      {% endif %}
       <div class="has-text-weight-bold has-text-justified mt-3">
         {% markdown %}{{ description }}{% endmarkdown %}
       </div>
