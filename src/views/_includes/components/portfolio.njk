@@ -14,7 +14,7 @@
               <div class="media-content is-hidden-mobile">
                 <div class="content">
                   <h3>{{ item.title }}</h3>
-                  <p class="is-hidden is-size-5">{{ item.description }}</p>
+                  <p class="is-hidden is-size-5">{{ item.description | safe}}</p>
                   <small class="small is-hidden">{{ item.keywords | join(', ') }}</small>
                 </div>
               </div>

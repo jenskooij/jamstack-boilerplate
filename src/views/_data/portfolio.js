@@ -48,6 +48,14 @@ const portfolio = [
     keywords: ["Bloomreach Experience Manager (brXM)", "Java", "Freemarker", "Groovy", "yaml", "html", "css", "javascript", "Bitbucket", "Git", "Jira", "Confluence", "IntelliJ", "jRebel", "Bloomreach Cloud"]
   },
   {
+    title: "Cloud Control",
+    year: 2018,
+    notes: "Maart 2018",
+    description: `Cloud Control is een flexibele en gemakkelijk te implementeren PHP framework en CMS. Het is open source en volledig gratis te gebruiken! Al sinds ik begonnen met met programmeren ben ik altijd bezig geweest met het ontwikkelen van eigen frameworks en CMS'en. Omdat ik vond dat deze iteratie dusdanig goed gebruiksklaar was, besloot ik het officieel publiek toegankelijk te maken. Check ook <a href="https://getcloudcontrol.org" target="_blank" rel="noopener">https://getcloudcontrol.org/</a>`,
+    image: "http://images.ctfassets.net/s0m3943n5459/4sQsAer0PCgCsSQ4Ocigmy/5d0a660487a13dc638250e060c0a5b16/cloud-control.png",
+    keywords: ["PHP", "MySQL", "html", "javascript", "css"]
+  },
+  {
     title: "Airmiles",
     image: "https://airmiles.global.ssl.fastly.net/binaries/content/gallery/airmiles/header/logo_airmiles.svg",
     year: 2017,
