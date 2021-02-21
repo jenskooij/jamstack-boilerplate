@@ -1,9 +1,9 @@
 <div class="portfolio-component">
   {% for year, items in portfolio %}
     <p class="subtitle">{{ year }}</p>
-    <div class="columns">
+    <div class="columns is-flex-wrap-wrap">
       {% for item in items %}
-        <div class="column is-one-third">
+        <div class="column is-one-third-widescreen is-half-tablet is-one-quarter-fullhd">
           <div class="box portfolio-item">
             <article class="media">
               <figure class="media-left">
