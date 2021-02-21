@@ -8,7 +8,6 @@ module.exports = {
     "Website van Jens Kooij, een developer uit Vlaardingen met ervaring in Java, PHP, Bloomreach, JAMStack, Spring Boot, Software Architecture en meer. ",
   authorName: "Jens Kooij",
   twitterUsername: "jenskooij", // no `@`
-  socialImage: "social.jpg",
-  splashImage: "splash.jpg", // The same as social, only 512px
-  appleTouchIcon: "appletouch.jpg"
+  socialImage: "/android-chrome-512x512.png",
+  splashImage: "/android-chrome-512x512.png", // The same as social, only 512px
 };

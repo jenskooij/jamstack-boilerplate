@@ -92,7 +92,7 @@ const portfolio = [
     image: "https://cstories.nl/wp-content/uploads/2018/02/LOG-incentro-420x205.png",
     year: 2015,
     notes: "Aug 2015 - Mrt 2019",
-    description: `Als consultant gewerkt in zelfsturende cellen. Meegewerkt aan opzetten self management binnen de vestiging. Gewerkt als consultant onder andere de rollen Bloomreach developer, sales consultant, peer coach, stagebegeleider`,
+    description: `Als consultant gewerkt in zelfsturende cellen. Meegewerkt aan opzetten self management binnen de vestiging. Gewerkt als consultant onder andere de rollen Bloomreach developer, sales consultant, peer coach, stagebegeleider. <a href="/incentro">Lees meer</a>`,
     keywords: ["Bloomreach Experience Manager (brXM)", "Bloomreach Cloud", "Java", "Freemarker", "Groovy", "yaml", "html", "css", "javascript", "(p)react", "Gitlab", "Spring Boot", "Elastic Search", "Apache Camel", "Git", "Jira", "Confluence", "SonarQube", "Postman", "IntelliJ", "jRebel", "GX", "ExperienceCentral", "WebManager", "JSP", "OSGi", "Interactive Forms"]
   },
   {

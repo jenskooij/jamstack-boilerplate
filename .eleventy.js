@@ -43,6 +43,9 @@ module.exports = function (eleventyConfig) {
     return self.renderToken(tokens, idx, options);
   };
 
+  // Copy assets to root
+  eleventyConfig.addPassthroughCopy({ "src/assets": "../site/" });
+
   md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
     // If you are sure other plugins can't add `target` - drop check below
     var aIndex = tokens[idx].attrIndex('target');
