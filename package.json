@@ -7,7 +7,6 @@
   "scripts": {
     "build": "npm run build-eleventy && npm run build-lambda && npm run build-js && npm run build-css",
     "build-css": "node-sass --omit-source-map-url src/sass/style.scss dist/site/style.css --output-style compressed",
-    "build-uncss": "npx uncss dist/site/**/*.html -o dist/site/style.css --ignore .modal.is-active,.button[disabled],.button.is-primary[disabled] --htmlroot dist/site/",
     "build-eleventy": "eleventy",
     "build-lambda": "netlify-lambda build src/lambda",
     "build-js": "globcat src/clientside-js/*.js --output dist/site/script.js && uglifyjs --compress --mangle -o dist/site/script.js -- dist/site/script.js",
@@ -16,8 +15,7 @@
     "serve-js": "nodemon --watch src/clientside-js --exec npm run build-js",
     "serve-css": "npm run build-css && node-sass --omit-source-map-url src/sass/style.scss dist/site/style.css --output-style compressed --watch",
     "serve-eleventy": "npx eleventy --serve",
-    "serve-lambda": "netlify-lambda serve src/lambda",
-    "merge-dev-and-deploy": "git checkout master && git merge develop && git push origin master && git checkout develop"
+    "serve-lambda": "netlify-lambda serve src/lambda"
   },
   "dependencies": {
     "@11ty/eleventy": "^1.0.1",
@@ -26,9 +24,9 @@
     "globcat": "^2.0.1",
     "html-minifier": "^4.0.0",
     "netlify-lambda": "^2.0.15",
+    "node-gyp": "^9.1.0",
     "node-sass": "^7.0.1",
-    "uglify-es": "^3.3.9",
-    "uncss": "^0.17.3"
+    "uglify-es": "^3.3.9"
   },
   "devDependencies": {
     "concurrently": "^7.2.1",
