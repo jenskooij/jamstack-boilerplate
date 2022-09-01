@@ -6,14 +6,14 @@
   "author": "Jens Kooij <jenskooij1988@gmail.com>",
   "scripts": {
     "build": "npm run build-eleventy && npm run build-lambda && npm run build-js && npm run build-css",
-    "build-css": "node-sass --omit-source-map-url src/sass/style.scss dist/site/style.css --output-style compressed",
+    "build-css": "sass src/sass/style.scss dist/site/style.css --style=compressed",
     "build-eleventy": "eleventy",
     "build-lambda": "netlify-lambda build src/lambda",
     "build-js": "globcat src/clientside-js/*.js --output dist/site/script.js && uglifyjs --compress --mangle -o dist/site/script.js -- dist/site/script.js",
     "dev": "npm run serve",
     "serve": "concurrently --kill-others \"npm run serve-eleventy\" \"npm run serve-lambda\" \"npm run serve-css\" \"npm run serve-js\"",
     "serve-js": "nodemon --watch src/clientside-js --exec npm run build-js",
-    "serve-css": "npm run build-css && node-sass --omit-source-map-url src/sass/style.scss dist/site/style.css --output-style compressed --watch",
+    "serve-css": "sass src/sass/style.scss dist/site/style.css --style=compressed --watch",
     "serve-eleventy": "npx eleventy --serve",
     "serve-lambda": "netlify-lambda serve src/lambda"
   },
@@ -24,9 +24,8 @@
     "globcat": "^2.0.1",
     "html-minifier": "^4.0.0",
     "netlify-lambda": "^2.0.15",
-    "node-gyp": "^9.1.0",
-    "node-sass": "^7.0.1",
-    "uglify-es": "^3.3.9"
+    "sass": "^1.54.8",
+    "uglify-js": "^3.17.0"
   },
   "devDependencies": {
     "concurrently": "^7.2.1",
