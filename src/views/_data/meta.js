@@ -8,7 +8,8 @@ module.exports = {
     "Description",
   authorName: "Jens Kooij",
   twitterUsername: "jenskooij", // no `@`
-  socialImage: "social.jpg",
-  splashImage: "splash.jpg", // The same as social, only 512px
-  appleTouchIcon: "appletouch.jpg"
+  socialImage: "favicons/social.png",
+  favicon: "favicons/favicon.png",
+  faviconIco: "favicons/favicon.ico",
+  tileColor: "#50333b"
 };

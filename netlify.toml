@@ -38,3 +38,7 @@
   for = "*.gif"
     [headers.values]
       cache-control = "public, max-age=2592000"
+[[headers]]
+  for = "*.ico "
+    [headers.values]
+      cache-control = "public, max-age=2592000"

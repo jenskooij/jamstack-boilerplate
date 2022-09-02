@@ -25,6 +25,11 @@ module.exports = function (eleventyConfig) {
   });
 
   /**
+   * Copy assets to dist root
+   */
+  eleventyConfig.addPassthroughCopy({ "src/assets": "../site/" });
+
+  /**
    * Set Eleventy input and output dirs
    * @type {{output: string, input: string}}
    */
