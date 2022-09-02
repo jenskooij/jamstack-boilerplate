@@ -2,3 +2,39 @@
   command = "npm run build" # the command you run to build this file
   functions = "dist/lambda" # netlify-lambda builds to this folder AND Netlify reads functions from here
   publish = "dist/site" # create-react-app builds to this folder, Netlify should serve all these files statically
+[[headers]]
+  for = "/*"
+    [headers.values]
+      X-Frame-Options = "DENY"
+      X-XSS-Protection = "1; mode=block"
+      X-Content-Type-Options = "nosniff"
+      Content-Security-Policy = "default-src 'self'; img-src https:; frame-src 'none'; font-src https://fonts.gstatic.com/; frame-ancestors 'none';"
+      Referrer-Policy = "strict-origin"
+[[headers]]
+  for = "/style.css"
+    [headers.values]
+      cache-control = "public, max-age=604800"
+[[headers]]
+  for = "/script.js"
+    [headers.values]
+      cache-control = "public, max-age=604800"
+[[headers]]
+  for = "*.webp"
+    [headers.values]
+      cache-control = "public, max-age=2592000"
+[[headers]]
+  for = "*.png"
+    [headers.values]
+      cache-control = "public, max-age=2592000"
+[[headers]]
+  for = "*.jpg"
+    [headers.values]
+      cache-control = "public, max-age=2592000"
+[[headers]]
+  for = "*.svg"
+    [headers.values]
+      cache-control = "public, max-age=2592000"
+[[headers]]
+  for = "*.gif"
+    [headers.values]
+      cache-control = "public, max-age=2592000"
