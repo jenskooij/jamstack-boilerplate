@@ -23,6 +23,7 @@
     "dotenv": "^16.0.1",
     "globcat": "^2.0.1",
     "html-minifier": "^4.0.0",
+    "markdown-it": "^13.0.1",
     "netlify-lambda": "^2.0.15",
     "sass": "^1.54.8",
     "uglify-js": "^3.17.0"
