@@ -15,6 +15,8 @@ $secondary-invert: findColorInvert($secondary);
 $custom-colors: ("secondary": ($secondary, $secondary-invert, lighten($secondary, 20%), darken($secondary, 20%)));
 $link: $primary;
 
+$menu-item-hover-background-color: lighten($primary, 20);
+
 $title-family: $family-sans-serif;
 $title-weight: 400;
 $title-size: 4rem;

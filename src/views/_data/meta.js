@@ -8,8 +8,8 @@ module.exports = {
     "Description",
   authorName: "Jens Kooij",
   twitterUsername: "jenskooij", // no `@`
-  socialImage: "favicons/social.png",
-  favicon: "favicons/favicon.png",
-  faviconIco: "favicons/favicon.ico",
+  socialImage: "img/favicons/social.png",
+  favicon: "img/favicons/favicon.png",
+  faviconIco: "img/favicons/favicon.ico",
   tileColor: "#50333b"
 };
