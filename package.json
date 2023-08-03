@@ -8,27 +8,27 @@
     "build": "npm run build-eleventy && npm run build-lambda && npm run build-js && npm run build-css",
     "build-css": "sass src/sass/style.scss dist/site/style.css --style=compressed",
     "build-eleventy": "eleventy",
-    "build-lambda": "netlify-lambda build src/lambda",
+    "build-lambda": "netlify functions:build --src src/lambda",
     "build-js": "globcat src/clientside-js/*.js --output dist/site/script.js && uglifyjs --compress --mangle -o dist/site/script.js -- dist/site/script.js",
     "dev": "npm run serve",
     "serve": "concurrently --kill-others \"npm run serve-eleventy\" \"npm run serve-lambda\" \"npm run serve-css\" \"npm run serve-js\"",
     "serve-js": "nodemon --watch src/clientside-js --exec npm run build-js",
     "serve-css": "sass src/sass/style.scss dist/site/style.css --style=compressed --watch",
     "serve-eleventy": "npx eleventy --serve",
-    "serve-lambda": "netlify-lambda serve src/lambda"
+    "serve-lambda": "netlify functions:serve --port 9000"
   },
   "dependencies": {
-    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy": "^1.0.2",
     "bulma": "^0.9.4",
-    "dotenv": "^16.0.1",
+    "dotenv": "^16.3.1",
     "globcat": "^2.0.1",
     "html-minifier": "^4.0.0",
-    "netlify-lambda": "^2.0.15",
-    "sass": "^1.54.8",
-    "uglify-js": "^3.17.0"
+    "netlify-cli": "^15.10.0",
+    "sass": "^1.64.2",
+    "uglify-js": "^3.17.4"
   },
   "devDependencies": {
-    "concurrently": "^7.3.0",
-    "nodemon": "^2.0.19"
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.22"
   }
 }
